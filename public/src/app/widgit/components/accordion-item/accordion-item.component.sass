@@ -1,0 +1,32 @@
+@import "../../../../styles"
+
+button.accordion
+  background-color: $primary-color
+  color: #444
+  cursor: pointer
+  padding: 18px
+  width: 100%
+  text-align: left
+  border: 1px solid gray
+  outline: none
+  transition: 0.4s
+  color: $text-theme
+  text-align: center
+
+
+button.accordion.active, button.accordion:hover
+  background-color: $primary-color
+  cursor: pointer
+
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel
+  padding: 14px 14px 14px 14px
+  background-color: transparent
+
+
+div.accordionOpen
+
+
+div.accordionClosed
+  display: none

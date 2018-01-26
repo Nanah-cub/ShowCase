@@ -1,0 +1,20 @@
+<div class="row">
+<div class="col-6 highlightContent">
+  <div class="alignMiddle">
+    <h1>GitHub Projects</h1>
+    <br>
+  </div>
+  <div [hidden]="!repos">
+    <div *ngFor="let repo of repos; let i = index;" class="col-sm-12">
+      <a href="{{repo.owner.html_url}}"><span class="repoLinks">{{repo.name}}</span></a>
+      <br>
+      <span class="repoDescription">{{repo.description}}</span> <br>
+      <span class="fadedUpdated">Last Updated: {{repo.updated_at | date}}</span>
+    </div>
+  </div>
+</div>
+<div class="col-12 col-xs-12 col-sm-12 col-md-6">
+  <canvas id="commitChart"  width="200" height="200"></canvas>
+</div>
+
+</div>

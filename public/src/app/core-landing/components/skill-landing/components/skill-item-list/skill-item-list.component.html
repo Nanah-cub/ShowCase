@@ -1,0 +1,3 @@
+<div *ngFor="let skill of skills;" class="col-xjs-20">
+  <app-skill-item [skill]="skill" (skillEmit)="inspectSkill($event)"></app-skill-item>
+</div>

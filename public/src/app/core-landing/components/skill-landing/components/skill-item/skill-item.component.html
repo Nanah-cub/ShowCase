@@ -1,0 +1,15 @@
+<div class="col-xjs-20 col-js-20 col-jm-20">
+  <div class="col-jxs-20 col-js-15 col-jm-17">
+    <h4 (click)="inspectCourse(skill)" *ngIf="skill.courses != null && skill?.courses.length>0" style="cursor: pointer">
+      {{skill.skills}} <img class="books-img" src="../../../../../../assets/courses.png">
+    </h4>
+    <h4 *ngIf="skill.courses === null || skill?.courses.length === 0">{{skill.skills}}</h4>
+
+    <p>{{skill.skillDesc}}</p>
+  </div>
+  <div class="col-jxs-20 col-js-5 col-jm-3">
+    <span class="glyphicon glyphicon-book"></span>
+  </div>
+</div>
+
+

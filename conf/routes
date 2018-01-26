@@ -1,0 +1,12 @@
+
+# An example controller showing a sample home page
+GET     /service/skillset           com.github.play.website.controllers.HomeController.getSkillSet(category: Option[String])
+GET     /service/exportSkillSet     com.github.play.website.controllers.HomeController.exportSkills(category: Option[String])
+GET     /                          controllers.Assets.at(path="/public/dist", file="index.html")
+GET     /*file                     controllers.Assets.at(path="/public/dist", file)
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+<app-filter-bar [filterBarItem]="filterBarItem" (onCategoryChange)="handleCategoryChange($event)"></app-filter-bar>
+<hr>
+<div class="col-xjs-20 col-js-20 col-jm-20">
+  <div id="skillContainer" class=" col-xjs-20 col-js-10 col-jm-10 right-border">
+      <h3 *ngIf="skillData.length > 0">Skills</h3>
+      <app-skill-item-list  (skillEmit)="inspectSkill($event)" [skills]="skillData"></app-skill-item-list>
+  </div>
+  <div class="col-xjs-20 col-js-10 col-jm-10" *ngIf="skillInspected != null">
+    <h3>Courses</h3>
+    <ul *ngFor="let course of skillInspected?.courses">
+      <li><b>{{course.courseName}}</b>: {{course.courseDescription}}</li>
+    </ul>
+  </div>
+
+</div>
+

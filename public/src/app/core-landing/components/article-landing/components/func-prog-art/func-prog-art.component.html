@@ -1,0 +1,70 @@
+<article>
+    <h1>Scala and Functional Programming</h1>
+  <hr>
+    <p>&emsp;Scala is my only experience with functional programming. I took two courses on it on Coursera and read a
+      book
+      called Functional Programming in Scala.
+      As a Backend Java Developer with limited experience using Java 8, the map, filter, foreach, and filter map
+      functions
+      in Scala were a delight.
+      In my opinion the coolest construct in Scala is pattern matching. The way that Scala handles the Future, Try,
+      Either, and Option data structures using pattern matching
+      was extremely fascinating to me. I have never touched the Option class in Java 8, and using Options in Scala made
+      me
+      realize how much I hate checking for null values. The gist below shows some examples of things I thought were
+      pretty cool about Scala.
+    </p>
+    <section>
+      <h1>Pros and Cons</h1>
+      <hr>
+      <p>&emsp; After experimenting with Scala and Functional Programming, I felt like I had a better understanding of the pros and cons.
+        Functional Programming is more concise that Object Oriented Programming. That is what I see as the biggest advantage.
+        Also since Functional Programming aims to create code without side effects, it should technically be easier to test.
+        Those are what I see as the primary advantages.
+        <br>
+        &emsp; One thing that I found when playing around with it, was that it was a lot harder for me to write.
+        I think a lot of that has to with what problems I tried to solve using it. Functional Programming is generally
+        very mathematical, and I feel like it is better to use when solving problems that are mathematical in nature.
+        Deserialization and serialization using Scala felt really clunky to me. It seemed like the recommended way is to use
+        Case Classes, and that seemed a little unmaintainable when dealing with more data. It is entirely possible that my knowledge is not yet
+        adequate enough to choose the best possible solution.
+      </p>
+
+    </section>
+
+    <section>
+      <h1>Features</h1>
+      <hr>
+    <h2 id="tuples">Tuples</h2>
+    <p>&emsp; Tuples were something that I have a love and hate relationship with. While I enjoy the fact that I don't
+      have to create a
+      class to encapsulate data, I found tuples kind of hard to use correctly. When I used them in my code, I sometimes
+      found it hard to remember how the data was paired.
+      One thing that I think would be cool for the future is if you could name your pairings when you first create a
+      tuple.
+      <ngx-gist style="height: 400px" [gistId]="'Nanah-cub/d9d6a00391c1e441c7ef9807c5955e9a'"></ngx-gist>
+    </p>
+    <h2>Options</h2>
+    <p>&emsp; Options in Scala introduced me to Options in Java. It is the data structure that I have the most hype for.
+      It wasn't until I started looking into Scala, that I realized that I really hate checking for and handling null
+      values.
+      <ngx-gist style="height: 150px" [gistId]="'Nanah-cub/87b978c12f955e5f82c3a0da87699ccb'"></ngx-gist>
+    </p>
+    <h2>Mapping Functions</h2>
+    <p>&emsp;I had little to no experience using map, filter, foreach, and other basic functions in Java. Using them in
+      Scala, made
+      me realize how much code I have to right in Java 5 to do something simple. Adding them in Java 8 was a really
+      smart move.
+      <ngx-gist style="height: 100px" [gistId]="'Nanah-cub/41ad9077ba89a413b528443002a06946'"></ngx-gist>
+    </p>
+    <h2>Pattern Matching</h2>
+    <p>&emsp; Pattern Matching is easily the most interesting feature that I learned about. I loved using them, and it
+      was an interesting
+      alternative to multiple if statements.
+      <ngx-gist style="height: 250px" [gistId]="'Nanah-cub/9f320ae60f59f8ee4383559af2dc105d'"></ngx-gist>
+    </p>
+  </section>
+</article>
+
+<div>
+</div>

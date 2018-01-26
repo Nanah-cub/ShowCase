@@ -1,0 +1,4 @@
+<button (click)="toggleAccordion()"  class="accordion">{{accordionTitle}}</button>
+<div [ngClass]="{'accordionOpen': isOpen, 'accordionClosed': !isOpen}" class="panel">
+<ng-content></ng-content>
+</div>

@@ -1,0 +1,5 @@
+<div>
+  <ul class="filterNav">
+    <li *ngFor="let item of filterBarItem"><a (click)="changeFilter(item.title)" [ngClass]="{'active': item.active}">{{item.title}}</a></li>
+  </ul>
+</div>
